@@ -1,4 +1,3 @@
-// Array of user data
 const users = [
     {
         id: 1,
