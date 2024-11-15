@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Users Container */
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* User Container */
+.user-container {
+    background-color: rgb(230, 226, 226);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* User Image */
+.user-image {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+
+}
+
+/* User Details */
+.user-details {
+    padding: 16px;
+    text-align: center;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+}
+
+.user-email,
+.user-age,
+.user-info {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Close Button */
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.user-card-1 {
+    transform-style: preserve-3d;
+}
+
+.user-card-1:hover {
+    transform: rotateY(40deg);
+}
